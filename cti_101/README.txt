@@ -36,15 +36,12 @@ Part 4 — Production concerns
   11_inference_pipeline             Unified analyze_report() combining NER
                                     + classification.
 
-Artifacts in this directory
----------------------------
-  ner-cti-bert / ner-cti-bert-final   Checkpoints + final NER model (05, 06)
-  cls-cti-bert / cls-cti-bert-final   Checkpoints + final classifier (08)
-  cls-data/                           Classification dataset splits (07)
-
 Setup
 -----
   pip install transformers datasets seqeval accelerate torch
 
 Recommended order: run notebooks 01 -> 11 in sequence. Notebooks 05 and 08
 train models consumed by later notebooks (09, 11), so do not skip them.
+
+Note: trained model directories and dataset splits produced by these
+notebooks are not checked in — regenerate them by running the notebooks.
